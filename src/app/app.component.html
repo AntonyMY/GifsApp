@@ -1,7 +1,13 @@
 <div class="d-flex">
 
+  <!-- 
+      ng g c gifs/busqueda --skipTests -is
+      nota: el -is inline style, para que no genere un archivo independiente de estilo css (busque.component.css)
+   -->
+
   <!-- Sidebar -->
-  <div class="bg-dark border-right p-3" id="sidebar">
+  <app-sidebar></app-sidebar>
+  <!-- <div class="bg-dark border-right p-3" id="sidebar">
     <h3 class="text-light">Gifs-App</h3>
 
     <hr class="text-white" />
@@ -10,10 +16,11 @@
         Dashboard
       </a>
     </div>
-  </div>
+  </div> -->
   <!-- End Sidebar -->
 
-  <div class="container">
+  <app-gifs-page class="container"></app-gifs-page>
+  <!-- <div class="container">
     <div class="row p-3">
 
       <div class="col">
@@ -30,6 +37,6 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
 
 </div>
