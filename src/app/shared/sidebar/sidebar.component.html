@@ -4,10 +4,11 @@
     <hr class="text-white" />
     <div class="list-group list-reset">
       <!-- <a href="#" class="list-group-item list-group-item-action">
-        Dashboard
+        Dashboard 
+        -pipe | paits para modificar en el template, solo para mostrar, no hace modificaciones a la data.
       </a> -->
       <a href="#" class="list-group-item list-group-item-action" *ngFor="let gifs2 of historial2 ">
-        {{ gifs2 }}
+        {{ gifs2 | titlecase }}
       </a>
     </div>
   </div>
